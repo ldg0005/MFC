@@ -1,1 +1,10 @@
+CMenu m_NewMenu;
+m_NewMenu.LoadMenuW(IDR_MDIPainterTYPE);
+ASSERT(m_NewMenu);
+SetMenu(NULL);
+::DestroyMenu(m_hMenuDefault);
+SetMenu(&m_NewMenu);
+m_hMenuDefault = m_NewMenu.GetSafeHmenu();
+/////////////////////////////////////////////////////메뉴 동적으로 바꾸기
+
 차일드는 프레임 생성시마다 초기화됨 (멤버변수 값이 계속0)

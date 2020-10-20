@@ -1,1 +1,10 @@
 
+CSize sizeTotal;
+ sizeTotal.cx = 400;
+ sizeTotal.cy = 600;
+ SetScrollSizes(MM_TEXT, sizeTotal);
+ SetScrollRange(SB_VERT,0,sizeTotal.cy);
+ SetScrollPos(SB_VERT,0);
+
+ SetScrollRange(SB_HORZ,0,sizeTotal.cx);
+ SetScrollPos(SB_HORZ,0);

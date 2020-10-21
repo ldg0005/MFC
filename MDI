@@ -8,3 +8,7 @@ CSize sizeTotal;
 
  SetScrollRange(SB_HORZ,0,sizeTotal.cx);
  SetScrollPos(SB_HORZ,0);
+
+뷰 내의 컨트롤 깜빡임 방지
+clipchildren 속성
+lockwindowupdate
